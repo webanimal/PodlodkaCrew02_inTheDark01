@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">InTheDark 01</string>
+
+    <!-- Main -->
+    <string name="main_title">Main title</string>
+    <string name="main_text">Hello World!</string>
+    <!-- Main -->
+
+</resources>
