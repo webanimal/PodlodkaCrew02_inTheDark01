@@ -6,7 +6,7 @@
     <color name="colorAccent">@color/colorLightPink</color>
 
     <!-- Backgrounds -->
-    <color name="colorTitleBackground">@color/colorWhite</color>
+    <color name="colorBackground">@color/colorWhite</color>
 
     <!-- Text colors -->
     <color name="colorTitleText">@color/colorBlack</color>
