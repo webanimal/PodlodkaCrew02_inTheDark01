@@ -2,6 +2,7 @@
 <resources>
 
     <dimen name="default_avatar_size">44dp</dimen>
+    <dimen name="default_avatar_half_size">22dp</dimen>
 
     <dimen name="default_padding_xsmall">4dp</dimen>
     <dimen name="default_padding_small">8dp</dimen>
