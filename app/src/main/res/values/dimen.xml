@@ -9,6 +9,8 @@
     <dimen name="main_badges_height">110dp</dimen>
     <dimen name="main_badges_half_height">55dp</dimen>
     <dimen name="main_badges_ava_size">32dp</dimen>
+    <dimen name="main_badges_margin_vertical">18dp</dimen>
+    <dimen name="main_badges_margin_horizontal">60dp</dimen>
 
     <dimen name="default_padding_xsmall">4dp</dimen>
     <dimen name="default_padding_small">8dp</dimen>

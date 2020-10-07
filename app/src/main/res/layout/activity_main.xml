@@ -30,15 +30,74 @@
         android:id="@+id/llBadges"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="@dimen/main_badges_margin_vertical"
+        android:paddingBottom="@dimen/main_badges_margin_vertical"
+        android:paddingLeft="@dimen/main_badges_margin_horizontal"
+        android:paddingRight="@dimen/main_badges_margin_horizontal"
         android:orientation="horizontal"
         android:elevation="@dimen/cardview_default_elevation"
+        android:background="@color/colorWhite"
         app:layout_constraintTop_toTopOf="@+id/badgesSpacerTop"
         app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llBadgesItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/main_badges_ava_size"
+                android:layout_height="@dimen/main_badges_ava_size"
+                android:src="@drawable/ic_star_painted"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/main_badges_item1_title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightGreen"
+                android:text="@string/main_badges_item1_text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBadgesItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/main_badges_ava_size"
+                android:layout_height="@dimen/main_badges_ava_size"
+                android:src="@drawable/ic_star_empty"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/main_badges_item2_title"
+                />
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/llBadgesItem3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
             >
 
@@ -46,7 +105,22 @@
                 android:layout_width="@dimen/main_badges_ava_size"
                 android:layout_height="@dimen/main_badges_ava_size"
                 android:text="@string/main_badges_item3_counter"
+                android:textColor="@color/colorWhite"
                 android:background="@color/colorLightGreen"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/main_badges_item3_title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightGreen"
+                android:text="@string/main_badges_item3_text"
                 />
 
         </LinearLayout>
