@@ -4,6 +4,12 @@
     <dimen name="default_avatar_size">44dp</dimen>
     <dimen name="default_avatar_half_size">22dp</dimen>
 
+    <dimen name="main_title_background_height">352dp</dimen>
+
+    <dimen name="main_badges_height">110dp</dimen>
+    <dimen name="main_badges_half_height">55dp</dimen>
+    <dimen name="main_badges_ava_size">32dp</dimen>
+
     <dimen name="default_padding_xsmall">4dp</dimen>
     <dimen name="default_padding_small">8dp</dimen>
     <dimen name="default_padding_normal">16dp</dimen>

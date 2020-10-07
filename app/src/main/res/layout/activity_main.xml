@@ -8,11 +8,49 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/titleBackgroundImg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/main_title_background_height"
+        app:srcCompat="@mipmap/img_title_back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
+
+    <Space
+        android:id="@+id/badgesSpacerTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_badges_half_height"
+        app:layout_constraintBottom_toBottomOf="@+id/titleBackgroundImg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/llBadges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="@dimen/cardview_default_elevation"
+        app:layout_constraintTop_toTopOf="@+id/badgesSpacerTop"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llBadgesItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="@dimen/main_badges_ava_size"
+                android:layout_height="@dimen/main_badges_ava_size"
+                android:text="@string/main_badges_item3_counter"
+                android:background="@color/colorLightGreen"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
