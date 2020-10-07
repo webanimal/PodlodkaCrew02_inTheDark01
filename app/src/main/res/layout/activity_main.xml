@@ -9,9 +9,10 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/titleBackgroundImg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/img_title_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/img_title_back"
+        app:layout_constraintDimensionRatio="H,13:10"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -26,19 +27,22 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/llBadges"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/main_badges_margin_vertical"
-        android:paddingBottom="@dimen/main_badges_margin_vertical"
-        android:paddingLeft="@dimen/main_badges_margin_horizontal"
-        android:paddingRight="@dimen/main_badges_margin_horizontal"
+        android:layout_marginStart="@dimen/main_badges_margin_left"
+        android:paddingTop="@dimen/main_badges_padding_vertical"
+        android:paddingBottom="@dimen/main_badges_padding_vertical"
+        android:paddingLeft="@dimen/main_badges_padding_horizontal"
+        android:paddingRight="@dimen/main_badges_padding_horizontal"
         android:orientation="horizontal"
         android:elevation="@dimen/cardview_default_elevation"
-        android:background="@color/colorWhite"
+        android:background="@drawable/shape_badges_background"
         app:layout_constraintTop_toTopOf="@+id/badgesSpacerTop"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
 
         <LinearLayout
             android:id="@+id/llBadgesItem1"
@@ -46,6 +50,10 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             >
 
             <ImageView
@@ -54,17 +62,36 @@
                 android:src="@drawable/ic_star_painted"
                 />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="@string/main_badges_item1_title"
-                />
+                android:layout_marginTop="@dimen/default_margin_xsmall"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/main_badges_item1_title_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/badges_text_size_description"
+                    android:text="@string/main_badges_item1_title_right"
+                    />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorLightGreen"
+                android:textColor="@color/colorLightGray"
+                android:textSize="@dimen/badges_text_size_description"
                 android:text="@string/main_badges_item1_text"
                 />
 
@@ -76,6 +103,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/llBadgesItem1"
+            app:layout_constraintRight_toLeftOf="@+id/llBadgesItem3"
             >
 
             <ImageView
@@ -87,6 +117,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_xsmall"
                 android:textStyle="bold"
                 android:text="@string/main_badges_item2_title"
                 />
@@ -99,19 +130,25 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             >
 
             <TextView
                 android:layout_width="@dimen/main_badges_ava_size"
                 android:layout_height="@dimen/main_badges_ava_size"
+                android:gravity="center"
                 android:text="@string/main_badges_item3_counter"
                 android:textColor="@color/colorWhite"
-                android:background="@color/colorLightGreen"
+                android:background="@drawable/shape_badge_background"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_xsmall"
                 android:textStyle="bold"
                 android:text="@string/main_badges_item3_title"
                 />
@@ -119,12 +156,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorLightGreen"
+                android:textSize="@dimen/badges_text_size_description"
+                android:textColor="@color/colorLightGray"
                 android:text="@string/main_badges_item3_text"
                 />
 
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

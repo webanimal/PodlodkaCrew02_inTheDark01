@@ -8,7 +8,8 @@
     <string name="main_badges_item3_title">Metascore</string>
     <string name="main_badges_item3_text">62 critic reviews</string>
     <string name="main_badges_item2_title">Rate This</string>
-    <string name="main_badges_item1_title">8.2/10</string>
+    <string name="main_badges_item1_title_left">8.2</string>
+    <string name="main_badges_item1_title_right">/10</string>
     <string name="main_badges_item1_text">150,212</string>
     <!-- Main -->
 
